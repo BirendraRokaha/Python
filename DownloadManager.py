@@ -16,8 +16,9 @@ img =(".jpg",".jpeg",".png",".svg")
 
 
 sourcePath='/Users/Birendra Rokaha/Downloads'
+files = [f for f in os.listdir('.') if os.path.isfile(f)]
 sourcefiles = os.listdir(sourcePath)
-for file in sourcefiles:
+for file in files:
     if file.endswith(tuple(ppt)):
         destinationPath = '/Users/Birendra Rokaha/Downloads/PowerPoint'
         shutil.move(os.path.join(sourcePath,file), os.path.join(destinationPath,file))
@@ -30,7 +31,7 @@ for file in sourcefiles:
     elif file.endswith('.exe'):
         destinationPath = '/Users/Birendra Rokaha/Downloads/Applications'
         shutil.move(os.path.join(sourcePath,file), os.path.join(destinationPath,file))
-    elif file.endswith(tuple(oth)):
+    else:
         destinationPath = '/Users/Birendra Rokaha/Downloads/Others'
         shutil.move(os.path.join(sourcePath,file), os.path.join(destinationPath,file))
 
