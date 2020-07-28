@@ -8,10 +8,12 @@ os.chdir('/Users/Birendra Rokaha/Downloads')
 def mkDir(dirName):
     os.mkdir(dirName)
 '''
+
 #list of extensions
 doc =( ".doc",".docx",".txt",".pdf",".rtf",".csv")
 ppt =( ".ppt", ".pptx")
 img =(".jpg",".jpeg",".png",".svg")
+
 '''
 # my old way of doing 
 sourcePath='/Users/Birendra Rokaha/Downloads'

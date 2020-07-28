@@ -1,5 +1,5 @@
 
-
+#THis prints fizzfuzz
 for i in range(1,100):
     output = ""
     if i % 3 == 0: output = output + "Fizz"
