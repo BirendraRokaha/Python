@@ -32,8 +32,11 @@ Abra = Pokemon(name='Abra',level=10,ptype='PSY')
 
 List_of_Pokemon = [Pikachu,Charmainder,Bulbasaur,Squirtle,Abra]
 
+'''
 for pok in List_of_Pokemon:
     print(f'{pok.name} {pok.level} {pok.ptype} {pok.healthp} {pok.attacks_list}')
 
 
 print(Pikachu.get_stats())
+'''
+
