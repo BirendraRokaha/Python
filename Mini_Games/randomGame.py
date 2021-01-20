@@ -14,7 +14,6 @@ def guess():
             guess = int(input("Pick a number form 1 ,2 or 3: "))
     return guess
 
-
 # The Game Logic checks if the player input is equal to the list
 def game(game_list,player_guess):
 
